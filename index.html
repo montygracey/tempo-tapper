@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempo Tapper</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+  </div>
+  <div class="app-container">
+    <div class="header">
+      <h1 class="app-title">Tempo Tapper</h1>
+      <p class="app-subtitle">Find your BPM</p>
+    </div>
+    <div class="display-panel">
+      <div class="display-item">
+        <span class="display-label">Average BPM</span>
+        <span id="averageBPM" class="display-value">0</span>
+      </div>
+      <div class="display-item">
+        <span class="display-label">Nearest BPM</span>
+        <span id="nearestBPM" class="display-value">0</span>
+      </div>
+      <div class="display-item">
+        <span class="display-label">Taps</span>
+        <span id="tapCount" class="display-value">0</span>
+      </div>
+    </div>
+    <div class="bpm-range">
+      <div class="bpm-bar" id="bpmBar"></div>
+    </div>
+    <div class="visualizer">
+      <div class="tap-indicator"></div>
+    </div>
+    <div class="controls">
+      <button id="tapButton" class="control-button tap-button" title="Tap to calculate BPM">
+        <i class="fas fa-hand-pointer"></i> Tap
+      </button>
+      <button id="resetButton" class="control-button reset-button" title="Reset the tapper">
+        <i class="fas fa-redo"></i> Reset
+      </button>
+      <button id="soundToggle" class="control-button sound-toggle" title="Toggle metronome sound">
+        <i class="fas fa-volume-up"></i> Sound: On
+      </button>
+    </div>
+    <div class="history-panel">
+      <h3>Tap History</h3>
+      <ul id="historyList"></ul>
+    </div>
+    <p id="directions" class="directions">Press any key or click the button to start tapping!</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

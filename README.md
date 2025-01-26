@@ -11,7 +11,6 @@
 - **Real-Time BPM Calculation**: Instantly calculates the average BPM and nearest whole BPM.
 - **Tap History**: Keeps a history of your taps for reference.
 - **Sound Feedback**: Plays a metronome sound on each tap (optional).
-- **Responsive Design**: Works seamlessly on desktop and mobile devices.
 - **Reset Functionality**: Reset the tapper manually or automatically after 2 seconds of inactivity.
 
 ---
